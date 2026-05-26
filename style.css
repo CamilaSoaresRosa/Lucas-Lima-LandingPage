@@ -1,0 +1,527 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.925);
+    font-family: Montserrat;
+    h2 {
+        font-size: 2vw;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    background-color: black;
+
+    nav {
+        font-size: 0.7vw;
+        display: flex;
+        gap: 2vw;
+        
+        a{
+            text-decoration: none;
+            padding: 0.5vw;
+        }
+    }
+
+    a:nth-child(5){
+        background-color: white;
+        color: #000000;
+        align-items: center;
+        text-align: center;
+        padding: 0.5vw 1vw;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .logo {
+        display: flex;
+        gap: 10px;
+        
+            h1{
+                font-size: 1.2vw;
+                color: #adadad;
+            } 
+            img {
+            width: 1.8vw;
+            height: auto;
+            }
+        }
+    }
+.hero {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+    width: 100%;
+    height: 100%;
+    padding: 8vw;
+
+    h2 {
+        font-size: 4vw;
+        z-index: 10;
+    }
+
+    p {
+        z-index: 10;
+        max-width: 30%;
+    }
+
+    a {
+        z-index: 10;
+        text-decoration: none;
+        color: white;
+        padding: 1vw 2vw;
+        border-radius: 5px;
+        border: 1px solid #ffffffc9;
+
+}
+
+.botoes {
+    display: flex;
+    gap: 3vw;
+
+    a:nth-child(2) {
+        background: white;
+        color: #000000;
+    }
+}
+}
+
+.bgzin {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+
+.sessao {
+    background-color: #000000;
+
+    width: 100%;
+    height: 100%;
+    padding: 4vw 12vw 8vw;
+    display: flex;
+
+    display: flex;
+    justify-content: space-between;
+
+    .titulo{
+        display: flex;
+        align-items: center;
+        
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    h2 {
+        font-size: 2vw;
+    }
+
+    p {
+        text-align: justify;
+        max-width: 22vw;
+    }
+
+    .foto {
+        position: absolute;
+        width: 20%;
+        height: auto;
+        right: 14%;
+        top: 96%;
+    }
+    /*img {
+        max-width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: end;
+    }*/
+}
+
+.sessaotres {
+    background-image: url(imagens/BG.png);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+
+    .titulo{
+        display: flex;
+        align-items: center;
+        padding: 4vw  12vw;
+    }
+
+    .ver {
+        text-decoration: none;
+        padding: 2vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 1vw 2vw;
+            border-radius: 5px;
+            border: 1px solid #ffffffc9;
+        }
+
+    }
+
+    img {
+        border-radius: 5px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 1vw;
+        padding: 0vw 8vw;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        padding: 0.5vw;
+        max-width: 24%;
+        aspect-ratio: 14/9;
+
+        background-image: url(imagens/imoveis/verso/verso.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .inf {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            p {
+                text-align:justify;
+                font-size: 12px;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        p{
+            text-align: bottom;
+        }
+
+    }
+    .card:nth-child(2) {
+        background-image: url(imagens/imoveis/ART/art\ syudo.png);
+    }
+    .card:nth-child(3) {
+        background-image: url(imagens/imoveis/singular/singular.png);
+    }
+    .card:nth-child(4) {
+        background-image: url(imagens/imoveis/livty/LIVTY.png);
+    }
+    .card:nth-child(5) {
+        background-image: url(imagens/imoveis/zion/ZION.png);
+    }
+    .card:nth-child(6) {
+        background-image: url(imagens/imoveis/315mil/imovel\ 1.png);
+    }
+    .card:nth-child(7) {
+        background-image: url(imagens/imoveis/verde/imovel\ 3.png);
+    }
+    .card:nth-child(8) {
+        background-image: url(imagens/imoveis/rosa/imovel\ 2.png);
+    }
+}
+
+.sessaoquatro {
+    background-color: #000000;
+    .titulo{
+        display: flex;
+        align-items: center;
+        padding: 4vw  12vw;
+    }
+}
+
+.grade{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 1vw 8vw 4vw;
+
+    h3{
+        padding-bottom: 1vw;
+    }
+
+    img {
+        padding-bottom:0.5vw ;
+    }
+}
+
+.sessaocinco {
+    background-image: url(imagens/BG.png);
+    background-size: cover;
+    background-position: bottom;
+
+    display: flex;
+    flex-direction: column;
+
+    .titulo{
+        display: flex;
+        align-items: center;
+        padding: 4vw  12vw;
+    }
+
+    p{
+        text-align: center;
+        padding-bottom: 2vw;
+    }
+
+    .contat{
+        display: flex;
+        justify-content: space-evenly;
+
+        #inf {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 2vw;
+            gap: 1vw;
+
+            text-align: center;
+            
+            p{
+                font-size: 14px;
+            }
+
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.3vw;
+            }
+
+            img {
+                max-width: fit-content;
+
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #001734;
+    color: white;
+
+    width: 100%;
+    padding: 0.5vw;
+
+    p {
+        margin: 0;
+        font-size: 0.5vw;
+        text-align: center;
+    }
+    
+}
+
+
+@media (max-width:500px){
+    * {
+        box-sizing: border-box;
+        p{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 16px;
+        }
+        .titulo{
+            h2{
+            font-size: 22px;
+            }
+            img{
+                width: 8%;
+            }
+        }
+    }  
+
+    .barra {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+        padding: ;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h2{
+            padding-top: 80vw;
+            font-size: 40px;
+        }
+        p{
+            max-width: 80%;
+        }
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+
+        a{
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+
+    .sessao {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20vw 12vw 8vw;
+
+        
+        #paragrafo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 120vw;
+        }
+
+        p{
+            font-size: 12px;
+            max-width: 100%
+        }
+
+        .foto{
+            top: 128%;
+            width: 72%;
+        }
+
+    }
+
+    .sessaotres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 3vw;
+
+        .cards{
+            display: flex;
+            flex-direction: column;
+            gap: 4vw;
+        }
+
+        .card {
+            max-width: none;
+            padding: 2vw;
+        }
+
+        #mobile {
+            display: none;
+        }
+        
+    }
+
+    .sessaoquatro {
+        .grade{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            p{
+                text-align: justify;
+            }
+
+            #topicos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .sessaocinco {
+        padding-bottom: 5vw;
+        .contat{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+            #inf {
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+        p{
+            font-size: 8px;
+        }
+    }
+}
+
+/* animação da seta é aqui embaixo*/
+/*html {
+    scroll-behavior: smooth;
+}
+.esconda {
+    z-index: -10;
+}
+.voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+    background:#000;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+
+    font-size: 24px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+/*footer{
+    background-color:#001734;
+    color:white;
+
+    width:100%;
+    padding:10px;
+}
+
+footer p{
+    margin:0;
+    text-align:center;
+    font-size:12px;
+}*/
