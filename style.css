@@ -366,7 +366,7 @@ footer {
 
     .hero {
         width: 100%;
-        padding: ;
+        padding: 10%;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -412,7 +412,7 @@ footer {
         }
 
         .foto{
-            top: 128%;
+            top: 135%;
             width: 72%;
         }
 
