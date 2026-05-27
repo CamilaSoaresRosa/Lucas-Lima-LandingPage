@@ -464,6 +464,7 @@ footer {
     }
 
     .sessaocinco {
+        background-size: auto;
         padding-bottom: 5vw;
         .contat{
             display:grid;
