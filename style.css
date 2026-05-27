@@ -600,9 +600,16 @@ footer {
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
+                justify-content: space-around;
                 
                 h3{
                     text-align: center;
+                }
+
+                #in {
+                    display: flex;
+                    flex-direction: column;
+
                 }
             }
         }
