@@ -23,6 +23,7 @@ html, body {
     background-color: black;
 
     nav {
+        z-index: 20;
         font-size: 0.7vw;
         display: flex;
         gap: 2vw;
@@ -44,6 +45,7 @@ html, body {
     }
     
     .logo {
+        z-index: 2;
         display: flex;
         gap: 10px;
         
@@ -62,6 +64,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 2vw;
+    
 
     width: 100%;
     height: 100%;
@@ -111,10 +114,10 @@ html, body {
     width: 100%;
     height: 100%;
     padding: 4vw 12vw 8vw;
-    display: flex;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .titulo{
         display: flex;
@@ -125,6 +128,7 @@ html, body {
         display: flex;
         flex-direction: column;
         gap: 5vw;
+        z-index: 2;
     }
     h2 {
         font-size: 2vw;
@@ -135,19 +139,10 @@ html, body {
         max-width: 22vw;
     }
 
-    .foto {
-        position: absolute;
-        width: 20%;
-        height: auto;
-        right: 14%;
-        top: 96%;
+    img {
+        z-index: 2;
+        size: 100%;
     }
-    /*img {
-        max-width: 40%;
-        height: auto;
-        display: flex;
-        justify-content: end;
-    }*/
 }
 
 .sessaotres {
@@ -341,151 +336,6 @@ footer {
 }
 
 
-@media (max-width:500px){
-    * {
-        box-sizing: border-box;
-        p{
-            font-size: 12px;
-        }
-        h3{
-            font-size: 16px;
-        }
-        .titulo{
-            h2{
-            font-size: 22px;
-            }
-            img{
-                width: 8%;
-            }
-        }
-    }  
-
-    .barra {
-        display: none;
-    }
-
-    .hero {
-        width: 100%;
-        padding: 10%;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        h2{
-            padding-top: 80vw;
-            font-size: 40px;
-        }
-        p{
-            max-width: 80%;
-        }
-    }
-
-    .botoes{
-        display: flex;
-        flex-direction: column;
-        max-width: 50%;
-
-        a{
-            font-size: 12px;
-            padding: 10px;
-        }
-    }
-
-    .sessao {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20vw 12vw 8vw;
-
-        
-        #paragrafo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 120vw;
-        }
-
-        p{
-            font-size: 12px;
-            max-width: 100%
-        }
-
-        .foto{
-            top: 135%;
-            width: 72%;
-        }
-
-    }
-
-    .sessaotres {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 3vw;
-
-        .cards{
-            display: flex;
-            flex-direction: column;
-            gap: 4vw;
-        }
-
-        .card {
-            max-width: none;
-            padding: 2vw;
-        }
-
-        #mobile {
-            display: none;
-        }
-        
-    }
-
-    .sessaoquatro {
-        .grade{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-
-            p{
-                text-align: justify;
-            }
-
-            #topicos {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                
-                h3{
-                    text-align: center;
-                }
-            }
-        }
-    }
-
-    .sessaocinco {
-        background-size: auto;
-        padding-bottom: 5vw;
-        .contat{
-            display:grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-
-            #inf {
-                a{
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-
-    footer {
-        p{
-            font-size: 8px;
-        }
-    }
-}
-
 @media (max-width:360px){
     * {
         box-sizing: border-box;
@@ -500,7 +350,7 @@ footer {
             font-size: 22px;
             }
             img{
-                width: 8%;
+                width: 10%;
             }
         }
     }  
@@ -508,20 +358,24 @@ footer {
     .barra {
         display: none;
     }
-
+    .bgzin {
+        display: none;
+    }
     .hero {
         width: 100%;
-        padding: 10%;
+        height: 620px;
         display: flex;
         flex-direction: column;
+        justify-content: end;
         gap: 30px;
+
         h2{
-            padding-top: 80vw;
             font-size: 40px;
         }
         p{
             max-width: 80%;
         }
+
     }
 
     .botoes{
@@ -543,12 +397,16 @@ footer {
         align-items: center;
         padding: 20vw 12vw 8vw;
 
+        h2{
+            font-size: 19px;
+        }
+
         
         #paragrafo {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 120vw;
+            padding-bottom: 8vw;
         }
 
         p{
@@ -557,7 +415,7 @@ footer {
         }
 
         .foto{
-            top: 145%;
+            top: 128%;
             width: 72%;
         }
 
@@ -600,28 +458,29 @@ footer {
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
-                justify-content: space-around;
                 
                 h3{
                     text-align: center;
-                }
-
-                #in {
-                    display: flex;
-                    flex-direction: column;
-
                 }
             }
         }
     }
 
     .sessaocinco {
-        background-size: auto;
         padding-bottom: 5vw;
+        background-size: auto;
+        display: flex;
+        align-items: center;
+
+        p{
+            max-width: 82%;
+        }
+
         .contat{
             display:grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+            padding-bottom: 8vw;
 
             #inf {
                 a{
