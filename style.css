@@ -108,10 +108,9 @@ html, body {
 }
 
 .bgzin {
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     width: 100%;
-    height: 90%;
 }
 
 .sessao {
@@ -124,6 +123,10 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    picture {
+        z-index: 20;
+    }
 
     .titulo{
         display: flex;
@@ -143,11 +146,6 @@ html, body {
     p {
         text-align: justify;
         max-width: 22vw;
-    }
-
-    img {
-        z-index: 2;
-        size: 100%;
     }
 }
 
@@ -197,6 +195,7 @@ html, body {
     }
 
     .card {
+        position: relative;
         padding: 0.5vw;
         max-width: 24%;
         aspect-ratio: 14/9;
@@ -228,6 +227,12 @@ html, body {
         }
 
     }
+    .card .inf p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    }
     .card:nth-child(2) {
         background-image: url(imagens/imoveis/ART/art\ syudo.png);
     }
@@ -249,8 +254,48 @@ html, body {
     .card:nth-child(8) {
         background-image: url(imagens/imoveis/rosa/imovel\ 2.png);
     }
+
+    .card::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 5px;
+        z-index: 0;
+
+        -webkit-mask-image: linear-gradient(to top, black 80%, transparent 70%);
+        mask-image: linear-gradient(to top, black 30%, transparent 70%);
+
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .card .inf,
+    .card h3 {
+    position: relative;
+    z-index: 1;
+    }
 }
 
+/*fundo preto*/
+/*.card::after{
+        content:"";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 0)100%
+            );
+            border-radius: 5px;
+            z-index: 0;
+    }
+    .card .inf, 
+    .card  h3 {
+        position: relative;
+        z-index: 10;
+    }
+}*/
 .sessaoquatro {
     background-color: #000000;
     .titulo{
@@ -316,6 +361,10 @@ html, body {
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 1.3vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
             }
 
             img {
