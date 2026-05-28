@@ -11,6 +11,12 @@
     h2 {
         font-size: 2vw;
     }
+
+    img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 }
 
 html, body {
@@ -24,7 +30,7 @@ html, body {
 
     nav {
         z-index: 20;
-        font-size: 0.7vw;
+        font-size: clamp(14px, 2vw, 16px);
         display: flex;
         gap: 2vw;
         
@@ -336,7 +342,7 @@ footer {
 }
 
 
-@media (max-width:360px){
+@media (max-width:600px){
     * {
         box-sizing: border-box;
         p{
@@ -373,7 +379,7 @@ footer {
             font-size: 40px;
         }
         p{
-            max-width: 80%;
+            max-width: 100%;
         }
 
     }
