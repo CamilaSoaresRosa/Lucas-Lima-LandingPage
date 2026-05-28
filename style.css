@@ -508,7 +508,7 @@ footer {
 }
 
 /* animação da seta é aqui embaixo*/
-/*html {
+html {
     scroll-behavior: smooth;
 }
 .esconda {
@@ -521,7 +521,7 @@ footer {
 
     width: 50px;
     height: 50px;
-    background:#000;
+    background:#00000000;
     color: white;
 
     display: flex;
@@ -534,16 +534,3 @@ footer {
 
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-/*footer{
-    background-color:#001734;
-    color:white;
-
-    width:100%;
-    padding:10px;
-}
-
-footer p{
-    margin:0;
-    text-align:center;
-    font-size:12px;
-}*/
