@@ -480,10 +480,22 @@ footer {
     }
 
     .apre{
-        width: 700px;
-        height: 570px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transform: translateX(-42%);
     }
 
+    .pessoa{
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto{
+        width: 85vw;
+        max-width: 400px;
+    }
 
 
     .sessaotres {
