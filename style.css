@@ -19,6 +19,8 @@
 }
 }
 
+
+
 html, body {
     overflow-x: hidden;
 }
@@ -70,7 +72,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    
+    position: relative;
 
     width: 100%;
     height: 100%;
@@ -79,6 +81,7 @@ html, body {
     h2 {
         font-size: 4vw;
         z-index: 10;
+        max-width: 40%;
     }
 
     p {
@@ -107,11 +110,21 @@ html, body {
 }
 }
 
+#logo3d {
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40vw;
+    height: 40vw;
+    z-index: 5;
+}
+/*
 .bgzin {
     z-index: 0;
     position: absolute;
     width: 100%;
-}
+}*/
 
 .sessao {
     background-color: #000000;
@@ -317,7 +330,6 @@ html, body {
 .grade{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
     padding: 1vw 8vw 4vw;
 
     h3{
@@ -398,6 +410,51 @@ footer {
     }
     
 }
+/*REFAZER ESSA ANIMÇÃO PRIMITIAVAAAAAAA*/
+#topicos {
+    position: relative;
+    border-radius: 3px;
+    padding: 2vw;
+    background: #33333300;
+}
+
+#topicos::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 3px;
+    background: linear-gradient(135deg, #b0b0b0, #e8e8e8, #6e6e6e, #ffffff, #9a9a9a, #d4d4d4);
+    background-size: 300% 300%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+#topicos:hover::before {
+    opacity: 1;
+    animation: prata 2.5s linear infinite;
+}
+
+@keyframes prata {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#topicos::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #000000;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#topicos > * {
+    position: relative;
+    z-index: 2;
+}
+/*NAO PODE ESQUECE DE REFAZER ESSA ANIMAÇÃO PRIMITIVAAAAAAA*/
 
 
 @media (max-width:600px){
