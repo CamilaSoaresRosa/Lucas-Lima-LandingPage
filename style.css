@@ -477,13 +477,14 @@ footer {
             font-size: 12px;
             max-width: 100%
         }
-
-        .foto{
-            top: 128%;
-            width: 72%;
-        }
-
     }
+
+    .apre{
+        width: 700px;
+        height: 570px;
+    }
+
+
 
     .sessaotres {
         display: flex;
@@ -564,7 +565,6 @@ footer {
         }
     }
 }
-
 /* animação da seta é aqui embaixo*/
 html {
     scroll-behavior: smooth;
