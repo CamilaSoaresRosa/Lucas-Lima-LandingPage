@@ -567,14 +567,30 @@ footer {
         transition: right 0.4s ease;
     }
 
+    .barra {
+        .logo {
+            padding: 2vw;
+                img {
+                width: 7%;
+                height: 100%;
+            }
+            h1{
+                font-size: 16px;
+            }
+        }
+    }
     .barra nav.aberta {
         display: flex;
         right: 0;
+        justify-content: flex-start;
+        padding-top: 20vw;
+
+
+        a:nth-child(5){
+            max-width: 45%;
+        }
     }
 
-    .barra {
-        display: none;
-    }
     .bgzin {
         display: none;
     }
