@@ -56,11 +56,27 @@ gsap.from(".card", {
 });
 
 
+const menuBtn = document.getElementById('menuBtn');
+const navMenu = document.getElementById('navMenu');
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('aberto');
+    navMenu.classList.toggle('aberta');
+});
+
+navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuBtn.classList.remove('aberto');
+        navMenu.classList.remove('aberta');
+    });
+});
+
+
 const canvas = document.getElementById('logo3d');
 
 const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(600, 600);
+renderer.setSize(1000, 1000);
 renderer.setClearColor(0x000000, 0);
 
 const scene = new THREE.Scene();
