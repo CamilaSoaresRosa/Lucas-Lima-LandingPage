@@ -30,7 +30,7 @@ gsap.from(".creci", {
 })
 
 gsap.to(".creci", {
-    x:300,
+    x:315,
 
     scrollTrigger: {
         Trigger: ".creci",

@@ -650,10 +650,9 @@ footer {
 
     .apre{
         position: relative;
-        width: 100%;
         display: flex;
         justify-content: center;
-        transform: translateX(-44%);
+        transform: translateX(-35%);
     }
 
     .pessoa{
